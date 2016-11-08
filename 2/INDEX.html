@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style.css">
+
+        <script src="js.js" type="text/javascript"></script>
+
+        <title>Title</title>
+    </head>
+
+    <body>
+    <div class="top-body" id="top-body">
+        <div class="top" id="top">
+            <div class="Casrusell">
+                <img src="img/8.png" class='img' alt="">
+            </div>
+            <div class="Casrusell">
+                <img src="img/15.jpg" class='img'  alt="">
+            </div>
+            <div class="Casrusell">
+                <img src="img/11.jpg" class='img' alt="">
+            </div>
+            <div class="Casrusell">
+                <img src="img/16.jpg" class='img'  alt="">
+            </div>
+            <div class="Casrusell">
+                <img src="img/4.jpg" class='img'  alt="">
+            </div>
+            <div class="Casrusell">
+                <img src="img/17.jpg" class='img'  alt="">
+            </div>
+            <div class="Casrusell">
+                <img src="img/5.jpg" class='img' alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="top-button">
+        <span class="light-off" id="Button1" >
+                <img src="img/2.png" height="40" width="40" alt="" onclick="start()">
+        </span>
+        <span class="light-off" id="Button2" >
+                <img src="img/4.png" height="40" width="40" alt="" id="ChangeButton" onclick="ChangeButtonStop(); CarouselBody() " >
+        </span>
+        <span class="light-off" id="Button3" >
+                <img src="img/1.png" height="40" width="40" onclick="play()" alt="">
+        </span>
+    </div>
+
+    <script>
+        function ChangeButtonPlay() {
+            var Button = document.getElementById('Button2');
+            var ChangeButton2 = document.getElementById("ChangeButton2");
+            Button.removeChild(ChangeButton2);
+            var NewIMg2 = document.createElement('img');
+            NewIMg2.setAttribute('src','img/4.png');
+            NewIMg2.setAttribute('height','40');
+            NewIMg2.setAttribute('width','40');
+            NewIMg2.setAttribute('id','ChangeButton');
+            NewIMg2.setAttribute('onclick','ChangeButtonStop(); CarouselBody()');
+            Button.appendChild(NewIMg2)
+        }
+        function ChangeButtonStop() {
+            var Button = document.getElementById('Button2');
+            var ChangeButton = document.getElementById("ChangeButton");
+            Button.removeChild(ChangeButton);
+            var NewIMg = document.createElement('img');
+            NewIMg.setAttribute('src','img/3.png');
+            NewIMg.setAttribute('height','40');
+            NewIMg.setAttribute('width','40');
+            NewIMg.setAttribute('id','ChangeButton2');
+            NewIMg.setAttribute('onclick','ChangeButtonPlay(); stop()');
+
+            Button.appendChild(NewIMg)
+
+        }
+        var lis = document.getElementsByClassName("Casrusell");
+
+        for(var i= 0; i< lis.length ; i++) {
+
+
+            lis[i] = i;
+
+        }
+
+        var Carousel = document.getElementById('top');
+        var allHeight = Carousel.offsetHeight;
+
+            function play() {
+                var PositionDiv = Carousel.getBoundingClientRect().top;
+                if (-PositionDiv < allHeight - lis[1].offsetHeight  ) {
+                    Carousel.style.top = PositionDiv + -500 + 'px';
+                }
+                else if  (-PositionDiv > -allHeight) {
+                    Carousel.style.top =  -500 + 'px';
+                }
+            }
+
+           function start() {
+               var PositionDiv = Carousel.getBoundingClientRect().top;
+               if (PositionDiv  < - lis[1].offsetHeight-1 ) {
+                   Carousel.style.top = PositionDiv + 500 + 'px';
+               }
+               else if  (PositionDiv >= -lis[1].offsetHeight) {
+                   Carousel.style.top =  -allHeight+lis[1].offsetHeight  + 'px';
+            }
+
+
+
+        }
+
+
+
+        function CarouselBody() {
+            PosTop = 0;
+            intStart = setInterval(Carousel3, 3);
+        }
+        PosTop = 0;
+        function Carousel3() {
+            var PositionDiv = Carousel.getBoundingClientRect().top;
+            if ( PosTop < allHeight- lis[1].offsetHeight) {
+                console.log(PosTop);
+                PosTop++;
+                Carousel.style.top = -PosTop + 'px';
+            }
+            else if(PosTop == allHeight - lis[1].offsetHeight) {
+                Carousel.style.top = 0 + 'px';
+                PosTop = 0;
+                PosTop++;
+                Carousel.style.top = -PosTop + 'px';
+            }
+        }
+
+function stop() {
+    clearInterval(intStart);
+    Carousel.style.top = 0 + 'px';
+}
+        /*
+
+
+         function startcarussel() {
+
+         var Carouse1 = document.getElementsByClassName("Casrusell");
+         var allHeight =  $("Carouse1").height();
+
+         var topPosition = Carouse.getBoundingClientRect().top;
+
+         var top=0;
+         for (top= 0; top <= allHeight; top++) {
+         console.log(top);
+         Carouse.style.top =  top + topPosition + 'px';
+
+         }
+
+         setInterval(startcarussel(), 6000);
+         }
+
+         var lis = document.getElementsByClassName("Casrusell");
+         for (var i=0; i<lis.length; i++ ) {
+         lis[i].style.position = "relative";
+         var rect = lis[i].getBoundingClientRect();
+         var arr = [];
+         arr[i] =  lis[i].getBoundingClientRect().top;
+         console.log(arr[i]);
+         }
+
+         function CarouselBody() {
+         for (var i=0; i<lis.length;i++ ) {
+         setInterval(Carousel3, 60);
+         var top = 0;
+         var CarouselAllImgHeight = (lis.length-1) * 314;
+         function Carousel3() {
+         if ( top < CarouselAllImgHeight) {
+         top++;
+         for (var g=0; g<lis.length; g++ ) {
+         lis[g].style.top = -top + 'px';
+         }
+         }
+         else if (top = 100)
+        {
+
+            top = 0;
+        }
+        }
+        }
+        }
+        /*
+         function ChangeButtonPlay() {
+         var Button = document.getElementById('Button2');
+         var ChangeButton2 = document.getElementById("ChangeButton2");
+         Button.removeChild(ChangeButton2);
+         var NewIMg2 = document.createElement('img');
+         NewIMg2.setAttribute('src','img/4.png');
+         NewIMg2.setAttribute('height','40');
+         NewIMg2.setAttribute('width','40');
+         NewIMg2.setAttribute('id','ChangeButton');
+         NewIMg2.setAttribute('onclick','move()');
+         NewIMg2.setAttribute('id','ChangeButton');
+         Button.appendChild(NewIMg2)
+         }
+         function ChangeButtonStop() {
+         var Button = document.getElementById('Button2');
+         var ChangeButton = document.getElementById("ChangeButton");
+         Button.removeChild(ChangeButton);
+         var NewIMg = document.createElement('img');
+         NewIMg.setAttribute('src','img/3.png');
+         NewIMg.setAttribute('height','40');
+         NewIMg.setAttribute('width','40');
+         NewIMg.setAttribute('id','ChangeButton2');
+         NewIMg.setAttribute('onclick','ChangeButtonPlay()');
+
+         Button.appendChild(NewIMg)
+
+         }
+         function move() {
+         ChangeButtonStop();
+         CarouselBody();
+         }
+         function left() {
+         var lis = document.getElementsByClassName("Casrusell");
+         for (var i=0; i<lis.length; i++ ) {
+         lis[i].style.position = "relative";
+
+         lis[i].style.top = + -323 + 'px';
+         }
+         }
+         function Right() {
+
+         for (var i=0; i<lis.length; i++ ) {
+         lis[i].style.position = "relative";
+         lis[i].style.top = arr[i]+ 314 + 'px';
+
+         }
+         }
+         var obj = {};
+         var lis = document.getElementsByClassName("Casrusell");
+         for (var i=0; i<lis.length;i++ ) {
+         obj[lis[i]] = lis[i].getBoundingClientRect().top;
+         }
+        function Carusel1() {
+        TimerId =  setInterval( Left, 1000);
+         }
+
+         return y
+         }
+         function Left() {
+         var lis = document.getElementsByClassName('Casrusell');
+
+         lis[0].style.position = "relative";
+         lis[0].style.top = -GetPosition() + -1 + 'px';
+         }
+
+
+
+         console.log(y);
+         if (y == 314) {
+         var FirsElement = lis[0].shift();
+         console.log(FirsElement)
+         }
+         function Carusel1() {
+
+
+         setTimeout(function Left() {
+         var lis = document.getElementsByClassName('Casrusell');
+         lis[0].style.marginTop = -50+ 'px';
+         setTimeout(function Left() {
+         lis[0].style.marginTop = -100+ 'px';
+         setTimeout(function Left() {
+         lis[0].style.marginTop = -150+ 'px';
+         setTimeout(function Left() {
+         lis[0].style.marginTop = -200+ 'px';
+         setTimeout(function Left() {
+         lis[0].style.marginTop = -250+ 'px';
+         setTimeout(function Left() {
+         lis[0].style.marginTop = -300+ 'px';
+         setTimeout(function Left() {
+         lis[0].style.marginTop = -319+ 'px';
+         }, 1000)
+         }, 1000)
+         }, 1000)
+         }, 1000)
+         }, 1000)
+         }, 1000);
+         }, 1000);
+         }
+
+         function Carusel2() {
+             for (i= 0 ; i > -318; i ++ ) {
+                 setTimeout(function Left() {
+                     lis = document.getElementsByClassName('Casrusell');
+                     lis[i].style.marginTop = -50 + 'px';
+                     setTimeout(function Left() {
+                         lis[i].style.marginTop = -100 + 'px';
+                         setTimeout(function Left() {
+                             lis[i].style.marginTop = -150 + 'px';
+                             setTimeout(function Left() {
+                                 lis[i].style.marginTop = -200 + 'px';
+                                 setTimeout(function Left() {
+                                     lis[i].style.marginTop = -250 + 'px';
+                                     setTimeout(function Left() {
+                                         lis[i].style.marginTop = -300 + 'px';
+                                         setTimeout(function Left() {
+                                             lis[i].style.marginTop = -319 + 'px';
+                                         }, 1000)
+                                     }, 1000)
+                                 }, 1000)
+                             }, 1000)
+                         }, 1000)
+                     }, 1000);
+                 }, 1000);
+             }
+             }
+
+         */
+    </script>
+    </body>
+    </html>

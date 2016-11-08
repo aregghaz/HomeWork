@@ -1,0 +1,32 @@
+#mat {
+    position: absolute;
+margin-left: 240px;
+}
+td {
+    width: 102px;
+    height: 62px;
+    text-align: center;
+    border: 1px solid black;
+
+}
+td:hover {
+    background-color: blue;
+}
+table {
+    border-collapse: inherit ;
+border: 1px solid black;
+}
+#prev {
+    margin-left: 260px;
+}
+#next {
+    margin-left: 600px;
+}
+th {
+    text-align: center;
+}
+#tn {
+    border: 1px solid black;
+    text-align: center;
+font-weight: bold ;
+}

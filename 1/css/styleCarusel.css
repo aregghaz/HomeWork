@@ -1,0 +1,135 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+.container {
+
+    width: 730px;
+
+    background-color: black;
+}
+.carusel {
+    height: 325px;
+    width: 735px;
+    background-color: white;
+    padding: 2px;
+    margin: 0 0 0 10px;
+    position: relative;
+    left: 234px;
+    top: -340px;
+    margin-top: 15px;
+    display: inline-block;
+
+}
+.carousel-control {
+    left: 0;
+    bottom: inherit ;
+
+}
+.left  {
+    position: absolute;
+    left: 568px;
+    top: 282px;
+}
+.right  {
+    position: absolute;
+    top: 282px;
+    left: 635px;
+}
+#carusel div img {
+    width: 100%;
+    height: 320px;
+}
+ #myCarousel{
+     width: 730px;
+     height: initial;
+     position: absolute;
+     left: 3px;
+    top: 2px;
+}
+
+
+.carousel1 {
+    position: relative;
+
+    padding: 10px 40px;
+
+
+    background:white;
+
+}
+
+.carousel1 img {
+    width: 123px;
+
+    margin: 20px;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #3d3d3d;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+    width: 24px;
+    height: 33px;
+}
+.arrow img {
+width: 13px;
+    height: 17px;
+margin: 4px;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+
+    cursor: pointer;
+}
+
+.prev {
+    left: 7px;
+}
+.prev img {
+    margin-Left: 3px;
+    margin-top: 7px;
+}
+
+.next {
+    right: 7px;
+
+}
+.next span, .prev span {
+    position: relative;
+    left: -1px;
+    top: 2px;
+    color: gray;
+}
+.next span:hover,.prev span:hover  {
+    color: #fa911a;
+}
+.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+
+}
+
+.gallery li {
+    display: inline-block;
+}

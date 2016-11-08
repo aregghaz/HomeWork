@@ -1,0 +1,252 @@
+body {
+    background-color: black;
+}
+.body {
+    width: 960px;
+
+    height: 500px;
+    margin: 0 auto;
+}
+.logo {
+    background-image: url("../img/1.png");
+    height: 90px;
+    width: 319px;
+    background-color: white;
+    border-radius: 3px;
+    display: inline-block;
+}
+.logo-span {
+    height: 25px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    display: block;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    opacity: 0.4;
+    top: -25px;
+}
+.knopkeq{
+    position: relative;
+    background-image: url("../img/4.png");
+    height: 15px;
+    width: 14px;
+    display: inline-block;
+
+}
+.logo-border {
+
+    left: 5px;
+    top:   5px;
+}
+.logo-border2 {
+    left: -13px;
+    top: 71px;
+}
+.logo-border3 {
+    top: 5px;
+    left: 264px;
+}
+.logo-border4 {
+    top: 71px;
+    left: 247px;
+}
+p {
+    display: inline-block;
+    margin: 0;
+    font-family: Tahoma;
+    letter-spacing: 4px;
+}
+.h3 {
+    background-color: red;
+    width: 100px;
+    height: 26px;
+    left: 140px;
+    top: -39px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.h3 p {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    text-orientation: inherit;
+    text-align: center;
+    display: block;
+    font-family: inherit;
+}
+.h1 {
+    position: relative;
+    top: 9px;
+    left: 27px;
+    font-size: 36px;
+    color: darkgrey;
+}
+
+.h4 {
+    position: relative;
+    top: -21px;
+    left: 50px;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: darkgrey;
+}
+.links{
+    display: inline-block;
+    position: relative;
+    left: 547px;
+    top: -44px;
+
+}
+.links img {
+background-repeat: no-repeat;
+border-left: 1px solid gray;
+
+}
+.top-body {
+    margin-bottom: -15px;
+}
+.menu {
+height: 46px;
+    background-color: #d0d0d0;
+    display: inline-block;
+    position: relative;
+    left: 54px;
+
+    top: 13px;
+
+    margin-bottom: 13px;
+}
+.menu span a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin:0 14px;
+    display: inline-block;
+    top:-15px;
+}
+.menu-hover {
+    height: 165px;
+    width: 470px;
+    border-radius: 6px;
+    position: absolute;
+    top: 75px;
+    z-index: 4;
+    left: 0;
+    display: none;
+    background-color: #d0d0d0;
+
+}
+.menu span:hover .menu-hover {
+display: inline-block;
+}
+.menu-hover h3 {
+    font-size: 14px;
+    margin-left: 17px;
+    display: block;
+    color:  #727272;
+
+}
+.menu-hover p {
+    color: #727272;
+    width: 435px;
+    font-size: 11px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    display: block;
+    word-spacing: 9px;
+    line-height: 2;
+}
+.top-body div {
+    position: relative;
+}
+.top-logo {
+    z-index: 3;
+}
+.top {
+    top:-12px;
+}
+.top-button {
+    margin: 0 auto;
+    display: table;
+    top: -3px;
+    margin-bottom: 18px;
+z-index: 2;
+}
+.light-off {
+    background-image: url("../img/13.png");
+ height: 13px;
+    width: 14px;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+.light-off:active, .light-off:visited {
+
+    background-image: url("../img/12.png");
+
+
+    z-index: 3;
+    position: relative;
+display: inline-block;
+}
+
+
+.light1 {
+    z-index: 4;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.futter {
+     width: 100%;
+     height: 249px;
+     background-color: white;
+     border-radius: 10px;
+ }
+.futter-cullom {
+    width: 316px;
+    display: inline-block;
+}
+.futter-cullom-header img {
+    position: relative;
+    top: -15px;
+}
+.futter-cullom-header p {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    display: inline-block;
+    top: 8px;
+    left: 27px;
+    color: white;
+    letter-spacing: 1px;
+
+}
+.futter-cullom-body p {
+    font-size: 11px;
+    margin-left: 27px;
+    margin-right: 27px;
+    letter-spacing: 1px;
+   ;
+}
+.futter-cullom-body {
+    border-right: 1px dashed black;
+    height: 157px;
+}
+.futter-cullom-body a {
+    text-decoration: none;
+    color: red;
+    position: relative;
+    left: 226px;
+    top: 41px;
+    font-size: 13px;
+}
+.futer-futer {
+    height: 20px;
+    width: 100%;
+    border-bottom: 1px solid #787878;
+}

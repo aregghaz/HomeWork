@@ -1,0 +1,202 @@
+body {
+    background-color: #30414c;
+}
+P, h5, h2, a {
+    font-family: Tahoma;
+}
+.bd {
+background-color: white;
+    width: 400px;
+    margin: 200px auto;
+    border: 1px solid black;
+    border-radius: 5px
+}
+.bd1 {
+    width: 400px;
+    height: 80px;
+    background-color: #1677cb;
+
+
+}
+
+H2 {
+    text-align: center;
+    color: white;
+    display: table;
+    font-size: 19px;
+    margin: -33px 0 0 159px;
+}
+h5 {
+    margin: 0;
+    position: relative;
+    color: white;
+    display: block;
+    font-size: 9px;
+    text-align: center;
+}
+.bd1 div {
+    background-image: url("img/1.gif");
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 55px;
+display: inline-block;
+    position: relative;
+    left: 100px;
+    top: 16px;
+
+}
+.bd2{
+    width:400px;
+
+}
+.bd2 div {
+    width: 198px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 14px;
+    text-align: center;
+    color: gray;
+    border-bottom: 1px solid;
+
+}
+.bd2 div:hover {
+    color: #1f7ddc;
+}
+
+form .bd3  label {
+    display: inline-block;
+    position: relative;
+    top: 22px;
+    left: 52px;
+    margin: 13px auto;
+    color: #c6c6c6;
+}
+form .bd3 .login {
+    margin-top: 0;
+}
+form .bd3 input {
+    position: relative;
+    height: 45px;
+    width: 300px;
+    top: 22px;
+    left: 52px;
+    font-size: 12px;
+    padding-left: 27px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+.ck {
+    position: relative;
+    top: 36px;
+    left: 52px;
+    color: gainsboro;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+#ck {
+    height: 14px;
+    width: 14px;
+
+}
+.bt {
+    margin-bottom: 50px;
+}
+button, #button {
+display: block;
+    height: 45px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: white;
+    background-color: #1f7ddc;
+    border: none;
+    text-align: center;
+    padding: -2px;
+    line-height: 45px;
+}
+#button {
+    font-size: 17px;
+}
+button:focus {
+    border: none;
+}
+.futter {
+    position: relative;
+    top: -34px;
+
+}
+
+.futter a {
+    color: gainsboro;
+    text-decoration: none;
+    margin: 0 auto;
+    display: table;
+}
+
+.header-button {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+}
+#Linkcovery {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+text-decoration: none;
+    color: white;
+}
+.cong {
+    border: 1px solid red;
+    color: white;
+    position: relative;
+    margin: 32px auto;
+    display: table;
+    padding: 3px 20px;
+}
+.link {
+    font-family: Tahoma;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fd0000;
+    text-decoration: none;
+}
+#divhelp {
+    left: 903px;
+    top: -626px;
+}
+#divhelp, #passwordhelp {
+    height: 50px;
+    width: 250px;
+    position: relative;
+  color: white;
+
+
+    border-radius: 5px;
+    display: none;
+    FONT-SIZE: 10px;
+    line-height: 2;
+    text-align: center;
+    background-color: #1f7ddc;
+
+font-family: tahoma;
+}
+
+#passwordhelp {
+    top: -485px;
+    left: 653px;
+    height: 81px;
+}
+.bd3 p {
+    font-family: Tahoma;
+    position: absolute;
+    left: 846px;
+    MARGIN-TOP: -21PX;
+color: #444444;
+    HEIGHT: 42PX;
+    WIDTH: 319PX;
+
+    BORDER-RADIUS: 13PX;
+    background-color:  #1f7ddc;
+    TEXT-ALIGN: CENTER;
+}

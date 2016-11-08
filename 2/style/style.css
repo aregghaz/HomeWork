@@ -1,0 +1,49 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.top-body {
+    margin: 0 auto;
+    display: table;
+    overflow: hidden;
+    width: 960px;
+    height: 500px;
+
+    z-index: 4;
+top:0;
+    position: relative;
+}
+
+.top {
+
+    position: absolute;
+    z-index: 3;
+
+
+}
+.Casrusell {
+height: 500px;
+    position: relative;
+
+}
+.img
+{
+   display: block;
+margin: auto auto;
+}
+
+
+
+
+
+
+
+
+
+.top-button {
+    margin: 0 auto;
+    display: table;
+    top: -3px;
+    margin-bottom: 18px;
+
+}
